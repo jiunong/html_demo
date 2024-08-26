@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var json = [
+        {
+            "data": [0,0,0,0,0,0,0,0,26.94,16,28.5,41.43],
+            "name": "A--交易金额"
+        },{
+            "data": [0,0,0,0,0,0,0,0,26.94,16,28.5,41.43],
+            "name": "B--交易金额"
+        },{
+            "data": [0,0,0,0,0,0,0,0,26.94,16,28.5,41.43],
+            "name": "C--交易金额"
+        },{
+            "data": [0,0,0,0,0,0,0,0,26.94,16,28.5,41.43],
+            "name": "D--交易金额"
+        },{
+            "data": [0,0,0,0,0,0,0,0,26.94,16,28.5,41.43],
+            "name": "E--交易金额"
+        }
+
+    ]
+
+    let res = []
+
+
+    json.forEach(u=>{
+        res.push({
+            name:u.name,
+            type:'bar',
+            emphasis:{
+              focus:'series'
+            },
+            data:u.data
+        })
+    })
+
+    console.log(res)
+
+
+</script>
+
+</body>
+</html>
